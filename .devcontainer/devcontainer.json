@@ -17,7 +17,15 @@
 	"workspaceFolder": "/workspace",
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": {
+		// [optional]: Uncomment belows if zsh have been settled
+		"terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+          "path": "/bin/zsh"
+      },
+    }
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
@@ -38,5 +46,5 @@
 	// "postCreateCommand": "apt-get update && apt-get install -y curl",
 
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+	// "remoteUser": "main"
 }
